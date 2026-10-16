@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="739" height="603" viewBox="0 0 739 603" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" role="img" aria-label="Le flux Claude Code avec chat-roles : vous, Claude, une autre session, un monitor et un déclencheur planifié">
+<title>Le flux Claude Code avec chat-roles : vous, Claude, une autre session, un monitor et un déclencheur planifié</title>
+<style>
+  text { white-space: pre; }
+  .cursor { animation: blink 1s steps(1, end) infinite; }
+  @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.25; } }
+  .m0 { animation: m0 18.0s ease-out infinite; }
+  @keyframes m0 { 0%, 3.33% { opacity: 0; transform: translateY(8px); } 5.33%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m1 { animation: m1 18.0s ease-out infinite; }
+  @keyframes m1 { 0%, 11.67% { opacity: 0; transform: translateY(8px); } 13.67%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m2 { animation: m2 18.0s ease-out infinite; }
+  @keyframes m2 { 0%, 20.0% { opacity: 0; transform: translateY(8px); } 22.0%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m3 { animation: m3 18.0s ease-out infinite; }
+  @keyframes m3 { 0%, 28.33% { opacity: 0; transform: translateY(8px); } 30.33%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m4 { animation: m4 18.0s ease-out infinite; }
+  @keyframes m4 { 0%, 36.67% { opacity: 0; transform: translateY(8px); } 38.67%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m5 { animation: m5 18.0s ease-out infinite; }
+  @keyframes m5 { 0%, 45.0% { opacity: 0; transform: translateY(8px); } 47.0%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  .m6 { animation: m6 18.0s ease-out infinite; }
+  @keyframes m6 { 0%, 53.33% { opacity: 0; transform: translateY(8px); } 55.33%, 92% { opacity: 1; transform: translateY(0); } 97%, 100% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .cursor, .arrive { animation: none; } }
+</style>
+<rect width="100%" height="100%" rx="12" fill="#0F1117"/>
+<g class="arrive m0">
+<rect x="16.8" y="46.0" width="7.98" height="38.0" rx="1.5" fill="#4ea1ff"/>
+<text x="33.6" y="60.0" fill="#4ea1ff" font-weight="700">VOUS</text>
+<text x="705.6" y="60.0" fill="#7D8799" text-anchor="end">10:02</text>
+<text x="33.6" y="79.0" fill="#D7DEE9" font-weight="700">Lance les tests e2e en fond et préviens-moi quand ils passent.</text>
+</g>
+<g class="arrive m1">
+<rect x="16.8" y="103.0" width="7.98" height="57.0" rx="1.5" fill="#3fcf8e"/>
+<text x="33.6" y="117.0" fill="#3fcf8e" font-weight="700">CLAUDE</text>
+<text x="705.6" y="117.0" fill="#7D8799" text-anchor="end">10:02</text>
+<text x="33.6" y="136.0" fill="#D7DEE9">Je les lance en tâche de fond ; je reprends le routeur des</text>
+<text x="33.6" y="155.0" fill="#D7DEE9">webhooks en attendant.</text>
+</g>
+<g class="arrive m2">
+<text x="16.8" y="193.0" fill="#8FC7A8">● </text>
+<text x="33.6" y="193.0" fill="#D7DEE9" font-weight="700">Bash</text>
+<text x="67.2" y="193.0" fill="#7D8799">(npm run test:e2e)</text>
+<text x="16.8" y="212.0" fill="#3A4356">  └ </text>
+<text x="50.4" y="212.0" fill="#7D8799">Running in the background</text>
+</g>
+<g class="arrive m3">
+<rect x="16.8" y="236.0" width="7.98" height="38.0" rx="1.5" fill="#e8b94a"/>
+<text x="33.6" y="250.0" fill="#e8b94a" font-weight="700">session-b</text>
+<text x="705.6" y="250.0" fill="#7D8799" text-anchor="end">10:05</text>
+<text x="33.6" y="269.0" fill="#7D8799">J'ai poussé le correctif de signature sur lot-2, tu peux rebaser.</text>
+</g>
+<g class="arrive m4">
+<rect x="16.8" y="293.0" width="7.98" height="114.0" rx="1.5" fill="#8b93a5"/>
+<text x="33.6" y="307.0" fill="#8b93a5" font-weight="700">MONITOR</text>
+<text x="109.2" y="307.0" fill="#7D8799">local_bash · completed</text>
+<text x="705.6" y="307.0" fill="#7D8799" text-anchor="end">10:07</text>
+<text x="33.6" y="326.0" fill="#7D8799">Background command "npm run test:e2e" completed (exit code 0)</text>
+<text x="33.6" y="345.0" fill="#7D8799">  128 passed, 0 failed</text>
+<text x="33.6" y="364.0" fill="#7D8799">  webhooks.spec.ts ........ 24 passed</text>
+<text x="33.6" y="383.0" fill="#7D8799">  billing.spec.ts ......... 61 passed</text>
+<text x="33.6" y="402.0" fill="#7D8799">…</text>
+</g>
+<g class="arrive m5">
+<rect x="16.8" y="426.0" width="7.98" height="57.0" rx="1.5" fill="#3fcf8e"/>
+<text x="33.6" y="440.0" fill="#3fcf8e" font-weight="700">CLAUDE</text>
+<text x="705.6" y="440.0" fill="#7D8799" text-anchor="end">10:07</text>
+<text x="33.6" y="459.0" fill="#D7DEE9">Les e2e passent (128/128). Je rebase sur lot-2 pour récupérer</text>
+<text x="33.6" y="478.0" fill="#D7DEE9">le correctif de session-b.</text>
+</g>
+<g class="arrive m6">
+<rect x="16.8" y="502.0" width="7.98" height="38.0" rx="1.5" fill="#8b93a5"/>
+<text x="33.6" y="516.0" fill="#8b93a5" font-weight="700">PLANIFIÉ</text>
+<text x="705.6" y="516.0" fill="#7D8799" text-anchor="end">10:30</text>
+<text x="33.6" y="535.0" fill="#7D8799">Vérifie la CI du lot 2 et résume les échecs.</text>
+</g>
+<rect x="12.6" y="547.6" width="697.2" height="1.14" rx="0" fill="#262A33"/>
+<text x="16.8" y="573.0" fill="#D7DEE9">&gt; </text>
+<rect x="33.6" y="561.28" width="7.56" height="14.82" rx="0" fill="#D7DEE9" class="cursor"/>
+<rect x="0" y="0" width="739" height="34" rx="12" fill="#1A1D25"/>
+<rect x="0" y="22" width="739" height="12" fill="#1A1D25"/>
+<line x1="0" y1="34" x2="739" y2="34" stroke="#262A33"/>
+<circle cx="20" cy="17" r="5.5" fill="#F5837C" opacity="0.85"/>
+<circle cx="38" cy="17" r="5.5" fill="#F6B12A" opacity="0.85"/>
+<circle cx="56" cy="17" r="5.5" fill="#8FC7A8" opacity="0.85"/>
+<text x="370" y="22" fill="#7D8799" text-anchor="middle" font-size="12">claude — ~/billing · chat-roles</text>
+</svg>

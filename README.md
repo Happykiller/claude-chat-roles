@@ -2,6 +2,20 @@
 
 Un mod pour [Claude Code](https://claude.com/claude-code) qui marque chaque message du flux d'une barre de couleur, d'une étiquette et de l'heure, pour voir d'un coup d'œil qui parle :
 
+<p align="center">
+  <img src="docs/chat-roles-flux.svg" alt="Le flux Claude Code avec chat-roles : chaque message porte une barre de couleur, l'étiquette de son auteur et son heure" width="720">
+</p>
+
+<sub>Maquette animée, dessinée d'après le rendu du mod. Dans le terminal, la barre est une colonne de cellules et les couleurs sont celles du mod.</sub>
+
+## Ce que ça change
+
+Sans le mod, tout ce qui arrive dans le tour « utilisateur » s'affiche comme un prompt `>` : vos messages, ceux d'une autre session, la fin d'une tâche de fond, un déclencheur planifié. Avec le mod, chacun est nommé, coloré et daté :
+
+<p align="center">
+  <img src="docs/chat-roles-avant-apres.svg" alt="Le même échange sans chat-roles, où tout ressemble à un prompt, et avec chat-roles, où chaque message est attribué" width="100%">
+</p>
+
 | Étiquette | Couleur | Qui |
 | --- | --- | --- |
 | `VOUS` | bleu | vos prompts (terminal, bridge, SDK) |
@@ -36,3 +50,5 @@ claude plugin validate .
 claude plugin test .
 claude --plugin-dir .
 ```
+
+Les maquettes du README se régénèrent avec `python3 docs/make_demo.py`.

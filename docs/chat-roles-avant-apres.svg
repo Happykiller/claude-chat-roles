@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1294" height="606" viewBox="0 0 1294 606" font-family="'JetBrains Mono','Cascadia Mono','SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" role="img" aria-label="Le même échange sans et avec chat-roles">
+<title>Le même échange sans et avec chat-roles</title>
+<style>
+  text { white-space: pre; }
+  .cursor { animation: blink 1s steps(1, end) infinite; }
+  @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.25; } }
+
+  @media (prefers-reduced-motion: reduce) { .cursor, .arrive { animation: none; } }
+</style>
+<rect width="100%" height="100%" rx="12" fill="#0F1117"/>
+<text x="16.8" y="60.0" fill="#7D8799" font-weight="700" font-size="12">SANS chat-roles</text>
+<text x="663.6" y="60.0" fill="#3fcf8e" font-weight="700" font-size="12">AVEC chat-roles</text>
+<rect x="16.8" y="82.1" width="604.8" height="22.8" rx="3" fill="#1C2029"/>
+<text x="21.0" y="98.0" fill="#7D8799">&gt; </text>
+<text x="37.8" y="98.0" fill="#D7DEE9">Lance les tests e2e en fond et préviens-moi quand ils passent.</text>
+<text x="21.0" y="136.0" fill="#D7DEE9">● </text>
+<text x="37.8" y="136.0" fill="#D7DEE9">Je les lance en tâche de fond ; je reprends le routeur des</text>
+<text x="37.8" y="155.0" fill="#D7DEE9">webhooks en attendant.</text>
+<text x="21.0" y="193.0" fill="#8FC7A8">● </text>
+<text x="37.8" y="193.0" fill="#D7DEE9" font-weight="700">Bash</text>
+<text x="71.4" y="193.0" fill="#7D8799">(npm run test:e2e)</text>
+<text x="21.0" y="212.0" fill="#3A4356">  └ </text>
+<text x="54.6" y="212.0" fill="#7D8799">Running in the background</text>
+<rect x="16.8" y="234.1" width="604.8" height="22.8" rx="3" fill="#1C2029"/>
+<text x="21.0" y="250.0" fill="#7D8799">&gt; </text>
+<text x="37.8" y="250.0" fill="#D7DEE9">J'ai poussé le correctif de signature sur lot-2, tu peux rebaser.</text>
+<rect x="16.8" y="272.1" width="604.8" height="98.8" rx="3" fill="#1C2029"/>
+<text x="21.0" y="288.0" fill="#7D8799">&gt; </text>
+<text x="37.8" y="288.0" fill="#D7DEE9">Background command "npm run test:e2e" completed (exit code 0)</text>
+<text x="37.8" y="307.0" fill="#D7DEE9">  128 passed, 0 failed</text>
+<text x="37.8" y="326.0" fill="#D7DEE9">  webhooks.spec.ts ........ 24 passed</text>
+<text x="37.8" y="345.0" fill="#D7DEE9">  billing.spec.ts ......... 61 passed</text>
+<text x="37.8" y="364.0" fill="#D7DEE9">  invoices.spec.ts ........ 43 passed</text>
+<text x="21.0" y="402.0" fill="#D7DEE9">● </text>
+<text x="37.8" y="402.0" fill="#D7DEE9">Les e2e passent (128/128). Je rebase sur lot-2 pour récupérer</text>
+<text x="37.8" y="421.0" fill="#D7DEE9">le correctif de session-b.</text>
+<rect x="16.8" y="443.1" width="604.8" height="22.8" rx="3" fill="#1C2029"/>
+<text x="21.0" y="459.0" fill="#7D8799">&gt; </text>
+<text x="37.8" y="459.0" fill="#D7DEE9">Vérifie la CI du lot 2 et résume les échecs.</text>
+<rect x="663.6" y="84.0" width="7.98" height="38.0" rx="1.5" fill="#4ea1ff"/>
+<text x="680.4" y="98.0" fill="#4ea1ff" font-weight="700">VOUS</text>
+<text x="1251.6" y="98.0" fill="#7D8799" text-anchor="end">10:02</text>
+<text x="680.4" y="117.0" fill="#D7DEE9" font-weight="700">Lance les tests e2e en fond et préviens-moi quand ils passent.</text>
+<rect x="663.6" y="141.0" width="7.98" height="57.0" rx="1.5" fill="#3fcf8e"/>
+<text x="680.4" y="155.0" fill="#3fcf8e" font-weight="700">CLAUDE</text>
+<text x="1251.6" y="155.0" fill="#7D8799" text-anchor="end">10:02</text>
+<text x="680.4" y="174.0" fill="#D7DEE9">Je les lance en tâche de fond ; je reprends le routeur des</text>
+<text x="680.4" y="193.0" fill="#D7DEE9">webhooks en attendant.</text>
+<text x="663.6" y="231.0" fill="#8FC7A8">● </text>
+<text x="680.4" y="231.0" fill="#D7DEE9" font-weight="700">Bash</text>
+<text x="714.0" y="231.0" fill="#7D8799">(npm run test:e2e)</text>
+<text x="663.6" y="250.0" fill="#3A4356">  └ </text>
+<text x="697.2" y="250.0" fill="#7D8799">Running in the background</text>
+<rect x="663.6" y="274.0" width="7.98" height="38.0" rx="1.5" fill="#e8b94a"/>
+<text x="680.4" y="288.0" fill="#e8b94a" font-weight="700">session-b</text>
+<text x="1251.6" y="288.0" fill="#7D8799" text-anchor="end">10:05</text>
+<text x="680.4" y="307.0" fill="#7D8799">J'ai poussé le correctif de signature sur lot-2, tu peux rebaser.</text>
+<rect x="663.6" y="331.0" width="7.98" height="114.0" rx="1.5" fill="#8b93a5"/>
+<text x="680.4" y="345.0" fill="#8b93a5" font-weight="700">MONITOR</text>
+<text x="756.0" y="345.0" fill="#7D8799">local_bash · completed</text>
+<text x="1251.6" y="345.0" fill="#7D8799" text-anchor="end">10:07</text>
+<text x="680.4" y="364.0" fill="#7D8799">Background command "npm run test:e2e" completed (exit code 0)</text>
+<text x="680.4" y="383.0" fill="#7D8799">  128 passed, 0 failed</text>
+<text x="680.4" y="402.0" fill="#7D8799">  webhooks.spec.ts ........ 24 passed</text>
+<text x="680.4" y="421.0" fill="#7D8799">  billing.spec.ts ......... 61 passed</text>
+<text x="680.4" y="440.0" fill="#7D8799">…</text>
+<rect x="663.6" y="464.0" width="7.98" height="57.0" rx="1.5" fill="#3fcf8e"/>
+<text x="680.4" y="478.0" fill="#3fcf8e" font-weight="700">CLAUDE</text>
+<text x="1251.6" y="478.0" fill="#7D8799" text-anchor="end">10:07</text>
+<text x="680.4" y="497.0" fill="#D7DEE9">Les e2e passent (128/128). Je rebase sur lot-2 pour récupérer</text>
+<text x="680.4" y="516.0" fill="#D7DEE9">le correctif de session-b.</text>
+<rect x="663.6" y="540.0" width="7.98" height="38.0" rx="1.5" fill="#8b93a5"/>
+<text x="680.4" y="554.0" fill="#8b93a5" font-weight="700">PLANIFIÉ</text>
+<text x="1251.6" y="554.0" fill="#7D8799" text-anchor="end">10:30</text>
+<text x="680.4" y="573.0" fill="#7D8799">Vérifie la CI du lot 2 et résume les échecs.</text>
+<line x1="642.6" y1="34" x2="642.6" y2="606" stroke="#262A33"/>
+<rect x="0" y="0" width="1294" height="34" rx="12" fill="#1A1D25"/>
+<rect x="0" y="22" width="1294" height="12" fill="#1A1D25"/>
+<line x1="0" y1="34" x2="1294" y2="34" stroke="#262A33"/>
+<circle cx="20" cy="17" r="5.5" fill="#F5837C" opacity="0.85"/>
+<circle cx="38" cy="17" r="5.5" fill="#F6B12A" opacity="0.85"/>
+<circle cx="56" cy="17" r="5.5" fill="#8FC7A8" opacity="0.85"/>
+<text x="647" y="22" fill="#7D8799" text-anchor="middle" font-size="12">claude — ~/billing</text>
+</svg>
