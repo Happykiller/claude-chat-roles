@@ -1,0 +1,13 @@
+{
+  "name": "claude-chat-roles",
+  "description": "Chat roles: barre de couleur, étiquette et heure sur chaque message du flux Claude Code",
+  "owner": {
+    "name": "Happykiller"
+  },
+  "plugins": [
+    {
+      "name": "chat-roles",
+      "source": "./"
+    }
+  ]
+}
