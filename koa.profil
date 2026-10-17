@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "nom": "chat-roles",
+  "utilisateur": "agent",
+  // Le socle dev porte déjà Node, Python 3 et gh : rien à ajouter.
+  "paquets": [],
+  "bootstrap": "bootstrap.sh",
+  "repertoire": "~/projet",
+  "agent": {
+    "nature": "claude",
+    "mode": "auto",
+    "modele": "opus",
+    "consigne": "Fais l'état des issues ouvertes de Happykiller/claude-chat-roles selon ton rôle (CLAUDE.md), puis attends le feu vert avant d'en traiter une."
+  },
+  "cloisonnement": {
+    "interop": false,
+    "montage_windows": false
+  },
+  "secrets": {
+    // Jeton fine-grained limité à Happykiller/claude-chat-roles.
+    "GH_TOKEN": { "requis": true },
+    // Identité des commits ; à défaut, le bootstrap en pose une neutre.
+    "GIT_USER_NAME": { "requis": false },
+    "GIT_USER_EMAIL": { "requis": false }
+  }
+}
