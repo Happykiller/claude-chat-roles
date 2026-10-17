@@ -34,3 +34,8 @@ Ce que Claude sait *faire* sur ce projet, et quand s'en servir. On n'y ajoute qu
 |---|---|---|
 | `koa` | Bibliothèque KoA (livres `koa/seed`, `koa/ghost`), `seed_verifier`, Cantina, ouverture d'agents | fourni par KoA à la session, pas de `.mcp.json` dans le dépôt |
 | `cockpit` | Plan d'exécution affiché à l'opérateur | plugin `cockpit` installé par l'opérateur, hors dépôt |
+
+## Remarques sur les skills
+
+- La détection des skills de sync data (`grep … 'description: .*(sync|synchro)'`, dans `/cloture`) **trouve `/cloture` lui-même**, dont la description parle de « synchronisation ». Ce n'est pas un skill de sync : l'ignorer. Un vrai skill de sync se reconnaît à ce qu'il pousse des données vers un remote.
+- `/cloture` renvoie vers `factory-accueil-session.md`, absent du dépôt : le lien fait partie du contenu de référence du livre `koa/ghost`, il est laissé tel quel.
