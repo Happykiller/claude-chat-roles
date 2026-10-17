@@ -21,7 +21,11 @@ Sans le mod, tout ce qui arrive dans le tour « utilisateur » s'affiche comme u
 | `VOUS` | bleu | vos prompts (terminal, bridge, SDK) |
 | `CLAUDE` | vert | les réponses de Claude |
 | nom de l'expéditeur, ou `AUTRE SESSION` | ambre | les messages d'autres sessions, de canaux ou d'un coordinateur |
+| `@auteur  Cantina table` | ambre | un message d'un autre agent, remis par la Cantina de [KoA](https://github.com/Happykiller/koa-releases) |
+| `@po, @qa → @dev  Cantina table · n messages` | gris | un avis de la Cantina (table en mode avis) : le courrier est à lire avec `cantina_courrier` |
 | `MONITOR`, `PLANIFIÉ` | gris | notifications de tâches de fond et déclencheurs planifiés |
+
+KoA remet les messages de la Cantina en les collant dans la saisie, si bien que Claude Code les enregistre comme vos prompts ; le mod les reconnaît à leur première ligne et les rend à leur auteur. Replié, le message perd son en-tête et la formule de fin destinée à l'agent ; déplié, il s'affiche en entier.
 
 Les messages qui ne viennent pas de vous sont repliés sur quatre lignes tant qu'ils ne sont pas dépliés. L'heure d'arrivée de chaque message est retenue d'une session à l'autre.
 
