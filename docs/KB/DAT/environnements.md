@@ -26,4 +26,4 @@ Pour voir le rendu Cantina sans KoA : coller comme prompt un texte qui commence 
 
 ## Publier
 
-Pas de CI. La publication est le merge sur `main` (le marketplace lit `main`), suivi d'un tag et d'une release GitHub : voir [../REGLES/process.md](../REGLES/process.md). Les utilisateurs mettent à jour avec `/plugin update chat-roles`.
+Pas de CI, et pas de PR : le marketplace lit `main`, donc tout push sur `main` est visible des nouvelles installations. Une version se publie par le bump, un tag et une release GitHub : voir [../REGLES/process.md](../REGLES/process.md). Les utilisateurs mettent à jour avec `/plugin update chat-roles`.

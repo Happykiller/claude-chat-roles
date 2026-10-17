@@ -14,7 +14,7 @@ maj: 2026-10-17
 3. `claude plugin test .` puis `claude plugin validate .`.
 4. README (tableau des rôles) et, si le rendu change, maquettes (`python3 docs/make_demo.py`).
 5. Voir le rendu dans une vraie session si possible ([../DAT/environnements.md](../DAT/environnements.md)).
-6. Branche, commit, PR : [process.md](process.md).
+6. Commit et push sur `main`, sans PR : [process.md](process.md).
 
 ## Clore une session
 

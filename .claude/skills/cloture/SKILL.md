@@ -15,7 +15,7 @@ trois est fausse, la session n'est pas close — et tu le dis au lieu de conclur
 
 | Dépôt | Chemin | Branche de travail | Remarque |
 | --- | --- | --- | --- |
-| claude-chat-roles | `.` | la branche courante (`fix/…`, `feat/…`, `chore/…`) | `main` reçoit le code par PR, mergée en rebase sur feu vert seulement (`docs/KB/REGLES/process.md`) : ne pas pousser de code directement sur `main` |
+| claude-chat-roles | `.` | `main` | pas de branche ni de PR : commit et push directement sur `main`, tests au vert d'abord (`docs/KB/REGLES/process.md`) ; version, tag et release sur feu vert seulement |
 
 | Stack | Fichier compose | Services |
 | --- | --- | --- |
