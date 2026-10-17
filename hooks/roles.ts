@@ -16,13 +16,55 @@ const MUTED_COLOR = '#8b93a5'
 const YOU_KINDS = ['composer', 'bridge', 'sdk']
 const PEER_KINDS = ['peer', 'peer-send-message', 'projects-relay', 'coordinator']
 
+// Signatures que KoA met en tête d'une remise de la Cantina (figées par un test côté KoA).
+const CANTINA_MESSAGE = /^\[Cantina · (?<table>[^·\]]+?) · de @(?<auteur>[a-z0-9-]+)\]/
+const CANTINA_NOTICE =
+  /^\[Cantina · (?<table>[^·\]]+?) · (?<n>\d+) messages? pour @(?<dest>[a-z0-9-]+) de (?<auteurs>@[a-z0-9-]+(?:, @[a-z0-9-]+)*)\]/
+const CANTINA_FOOTER = /\n+Si une réponse est attendue, donne-la sur la table avec l'outil cantina_dire[^\n]*\s*$/
+const PASTED_OPEN = /^\s*<pasted_content[^>]*>\s*/
+const PASTED_CLOSE = /\s*<\/pasted_content>\s*$/
+
+const unwrapPasted = (text: string): string =>
+  PASTED_OPEN.test(text) ? text.replace(PASTED_OPEN, '').replace(PASTED_CLOSE, '') : text
+
+export const cantinaRole = (text: string): Role | null => {
+  const head = unwrapPasted(text)
+  const message = CANTINA_MESSAGE.exec(head)?.groups
+
+  if (message !== undefined) {
+    return { label: `@${message.auteur}`, color: PEER_COLOR, detail: `Cantina ${message.table}` }
+  }
+
+  const notice = CANTINA_NOTICE.exec(head)?.groups
+
+  if (notice !== undefined) {
+    const count = `${notice.n} message${notice.n === '1' ? '' : 's'}`
+
+    return {
+      label: `${notice.auteurs} → @${notice.dest}`,
+      color: MUTED_COLOR,
+      detail: `Cantina ${notice.table} · ${count}`,
+    }
+  }
+
+  return null
+}
+
+// Retire l'en-tête (déjà dans l'étiquette) et la formule de fin, qui ne sert qu'à l'agent.
+export const cantinaBody = (text: string): string =>
+  unwrapPasted(text)
+    .replace(/^[^\n]*\n?/, '')
+    .replace(CANTINA_FOOTER, '')
+    .trim()
+
 export const roleOfUserMessage = (
   origin: OriginLike,
   from?: FromLike,
   task?: TaskLike,
+  text?: string,
 ): Role => {
   if (YOU_KINDS.includes(origin.kind)) {
-    return YOU
+    return (text === undefined ? null : cantinaRole(text)) ?? YOU
   }
 
   if (origin.kind === 'task-notification') {

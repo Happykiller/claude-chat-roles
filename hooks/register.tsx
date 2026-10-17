@@ -1,6 +1,6 @@
 import type { EngineInterface, Register } from 'claude-code'
 
-import { CLAUDE, clipLines, formatTime, pruneSeen, roleOfUserMessage } from './roles'
+import { CLAUDE, YOU, cantinaBody, cantinaRole, clipLines, formatTime, pruneSeen, roleOfUserMessage } from './roles'
 import type { Role } from './roles'
 
 const STORE_KEY = 'seen'
@@ -35,10 +35,12 @@ const stamp = async ($: EngineInterface, id: string): Promise<number> => {
 export const register: Register = on => {
   on('ui.render', { component: 'UserMessage' }, async ($, e, next) => {
     const { Box, Text } = $.ui.resolve(e)
-    const role: Role = roleOfUserMessage(e.props.origin, e.props.from, e.props.task)
+    const role: Role = roleOfUserMessage(e.props.origin, e.props.from, e.props.task, e.props.text)
     const time = formatTime(await stamp($, e.requestId))
-    const isYou = role.label === 'VOUS'
-    const body = isYou || e.props.isExpanded ? e.props.text : clipLines(e.props.text, COMPACT_LINES)
+    const isYou = role === YOU
+    const isCantina = !isYou && cantinaRole(e.props.text) !== null
+    const text = isCantina && !e.props.isExpanded ? cantinaBody(e.props.text) : e.props.text
+    const body = isYou || e.props.isExpanded ? text : clipLines(text, COMPACT_LINES)
 
     return (
       <Box flexDirection="row" marginBottom={1}>
