@@ -1,1 +1,1 @@
-{ "name": "chat-roles", "version": "0.1.0", "description": "Barre de couleur, étiquette et heure sur chaque message du flux : vous, Claude, autres sessions, monitors.", "author": { "name": "Happykiller" } }
+{ "name": "chat-roles", "version": "0.2.0", "description": "Barre de couleur, étiquette et heure sur chaque message du flux : vous, Claude, autres sessions, Cantina de KoA, monitors.", "author": { "name": "Happykiller" } }
